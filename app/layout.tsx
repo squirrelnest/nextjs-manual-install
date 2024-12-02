@@ -1,4 +1,5 @@
 import React from "react";
+import { APIContextProvider, APIContext } from "./context/apiContext";
 
 export default function RootLayout({
     children
@@ -8,7 +9,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                {children}
+                <APIContextProvider>
+                    {children}
+                </APIContextProvider>
             </body>
         </html>
     )
