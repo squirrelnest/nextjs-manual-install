@@ -15,7 +15,7 @@ export const Posts = async () => {
     console.log(posts);
 
     return (
-        <>
+        <div id="posts">
             <h1>Vercel Blog Posts</h1>
             <h2>Simple Info</h2>
             <ul>
@@ -36,6 +36,6 @@ export const Posts = async () => {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     )
 }
